@@ -16,6 +16,7 @@ var http         = require("http"),
     redisStore   = require("connect-redis")(session),
     redisDb      = require("redis"),
     path         = require("path"),
+    clc          = require('cli-color'),
     fs           = require("fs");
 //==================================================================
 var env     = process.env.NODE_ENV || 'dev';
@@ -144,7 +145,7 @@ if (config.https === true) {
 }
 
 var srv = server.listen(config.port, function () {
-    console.log('<<< Jern server listening on port ' + config.port);
+    console.log(clc.green('<<< Jern server listening on port ') + clc.yellow(config.port));
 });
 //==================================================================
 if (config.socket.enabled) {
