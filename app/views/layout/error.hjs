@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <meta name="url" content="{{url}}">
+        
+        <title>{{$title}}Pagina di errore{{/title}}</title>
+
+        {{#assets.error.css}}
+            <link rel="stylesheet" type="text/css" href="{{file}}">
+        {{/assets.error.css}}
+
+    </head>
+    <body>
+        {{$content}} default content {{/content}}
+
+        {{#assets.error.js}}
+            <script type="text/javascript" src="{{file}}"></script>
+        {{/assets.error.js}}
+
+        {{$scripts}} {{/scripts}}
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <meta name="csrf-token" content="{{csrf}}">
+        <meta name="url" content="{{url}}">
+        
+        <title>{{title}}</title>
+
+        {{#assets.base.css}}
+            <link rel="stylesheet" type="text/css" href="{{file}}">
+        {{/assets.base.css}}
+
+    </head>
+    <body>
+        {{$content}} default content {{/content}}
+
+        {{#assets.base.js}}
+            <script type="text/javascript" src="{{file}}"></script>
+        {{/assets.base.js}}
+
+        {{$scripts}} {{/scripts}}
+    </body>
+</html>

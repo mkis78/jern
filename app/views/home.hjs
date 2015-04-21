@@ -1,0 +1,6 @@
+{{<layout}}
+    {{$content}}
+        <h1>Benvenuto su {{title}}!</h1>
+        <h2>Sono collegati ben <span id="socketUsers"></span> utenti</h2>
+    {{/content}}
+{{/layout}}
