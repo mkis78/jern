@@ -6,7 +6,7 @@ module.exports = function (app, config) {
         res.locals.assets = {
             base : {
                 css : [
-                    {file: "/bootstrap/css/cyborg.css"},
+                    {file: "/bootstrap/css/cosmo.css"},
                     {file: "/bootstrap/css/font-awesome.min.css"},
                     {file: "/css/app.css"}
                 ],
