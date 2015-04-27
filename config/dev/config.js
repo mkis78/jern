@@ -33,7 +33,8 @@ module.exports = function (app) {
         view : {
             templateEngine : 'hogan',
             templateExt    : 'hjs',
-            baseLayout     : 'base'
+            baseLayout     : 'base',
+            favicon        : 'favicon.ico'
         },
         socket : {
             enabled   : true,

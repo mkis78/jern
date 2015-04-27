@@ -1,5 +1,5 @@
 var gulp       = require('gulp'),
-    nodemon    = require('gulp-nodemon'),
+    nodemon    = require('nodemon'),
     fs         = require('fs'),
     path       = require('path');
 var out_log    = path.join(__dirname, "tmp", "logs");
